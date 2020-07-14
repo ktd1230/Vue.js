@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <ToolBar></ToolBar> -->
+    <!-- 위에 것에 비해 아래는 컴포넌트 tag라는 것이 명시적으로 구분이 된다. -->
+    <!-- 또한 아래는 ctrl + 마우스 클릭에 의해 해당 컴포넌트 이동할 수 있다. -->
+    <tool-bar></tool-bar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ToolBar from './components/ToolBar.vue';
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    ToolBar,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  padding: 0;
+  margin: 0;
 }
 </style>
