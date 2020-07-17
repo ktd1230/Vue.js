@@ -13,7 +13,7 @@ export const router = new VueRouter({
   routes: [
     {
         path: '/',
-        component: NewsView,
+        redirect: '/news',
     },
     {
         // path: url 주소
@@ -30,12 +30,12 @@ export const router = new VueRouter({
         component: JobsView,
     },
     {
-        path: '/item',
-        component: ItemView,
+        path: '/user/:id',
+        component: UserView,
     },
     {
-        path: '/user',
-        component: UserView,
+        path: '/item/:id',
+        component: ItemView,
     }
   ]
 });
