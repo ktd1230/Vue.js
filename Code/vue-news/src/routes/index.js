@@ -5,6 +5,7 @@ import AskView from '../views/AskView.vue';
 import JobsView from '../views/JobsView.vue';
 import ItemView from '../views/ItemView.vue';
 import UserView from '../views/UserView.vue';
+import Chart from '../views/Chart.vue';
 // import createListView from '../views/CreateListView.js';
 import bus from '../utils/bus.js';
 import { store } from '../store/index.js';
@@ -78,6 +79,10 @@ export const router = new VueRouter({
     {
         path: '/item/:id',
         component: ItemView,
+    },
+    {
+        path: '/chart',
+        component: Chart,
     }
   ]
 });
